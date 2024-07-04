@@ -38,6 +38,7 @@ class View(ft.UserControl):
         self._btnAnalisiComp = ft.ElevatedButton(text = "Analisi Componente.",
                                                  on_click=self._controller.handleAnalisiComp)
 
+
         row2 = ft.Row([
             ft.Container(self._ddAlbum, width=300),
             ft.Container(self._btnAnalisiComp, width=300)
@@ -78,3 +79,4 @@ class View(ft.UserControl):
 
     def update_page(self):
         self._page.update()
+
